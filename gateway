@@ -1,0 +1,9 @@
+--This will be removed once every team has a player in it.
+tfm.exec.addPhysicObject(1,191,200,{
+type=0,
+restitution=0.2,
+friction=0.3,
+width=10,
+height=408,
+groundCollision=true
+})
