@@ -1,5 +1,0 @@
-ui.addTextArea(0, "<a href='event:uno'><b><J>Team 1!</b></J>", name, 109, 40, 62, 20, 0x324650, 0x000000, 1, true)
-ui.addTextArea(1, "<a href='event:dos'><b><J>Team 2!</b></J>", name, 109, 113, 62, 20, 0x324650, 0x000000, 1, true)
-ui.addTextArea(2, "<a href='event:tres'><b><J>Team 3!</b></J>", name, 109, 190, 62, 20, 0x324650, 0x000000, 1, true)
-ui.addTextArea(4, "<a href='event:quatro'><b><J>Team 4!</b></J>", name, 109, 270, 62, 20, 0x324650, 0x000000, 1, true)
-ui.addTextArea(5, "<a href='event:sinco'><b><J>Team 5!</b></J>", name, 109, 350, 62, 20, 0x324650, 0x000000, 1, true)
