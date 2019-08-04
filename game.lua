@@ -30,38 +30,38 @@ team5 = {}
 function eventTextAreaCallback(id, name, evt)
     if evt == "uno" and #team1 == 0 then
         table.insert(team1, name)
-        tfm.exec.movePlayer(name,109,40,nil,0,0,nil)            
+        tfm.exec.movePlayer(name,109,40,nil,0,0,nil)
+        removeTextAreas()          
     end
 
     if evt == "dos" and #team2 == 0 then
         team2 = {}
         table.insert(team2, name)
-        tfm.exec.movePlayer(name,109,113,nil,0,0,nil)       
+        tfm.exec.movePlayer(name,109,113,nil,0,0,nil)
+        removeTextAreas()       
     end
 
     if evt == "tres" and #team3 == 0 then
         team3 = {}
         table.insert(team3, name)
         tfm.exec.movePlayer(name,109,190,nil,0,0,nil)
+        removeTextAreas()
     end
 
     if evt == "quatro" and #team4 == 0 then
         team4 = {}
         table.insert(team4, name)
         tfm.exec.movePlayer(name,109,270,nil,0,0,nil)
+        removeTextAreas()
     end
 
     if evt == "sinco" and #team5 == 0 then
         team5 = {}
         table.insert(team5, name)
         tfm.exec.movePlayer(name,109,350,nil,0,0,nil)
+        removeTextAreas()
     end
-    ui.removeTextArea(0, name)
-    ui.removeTextArea(1, name)
-    ui.removeTextArea(2, name)
-    ui.removeTextArea(4, name)
-    ui.removeTextArea(5, name)
-    ui.addTextArea(10, "<B><J>Click Spacebar To Move To Your Right. Destroy The Other Competitions, This Module Was Made By Overforyou#9290!", name, 19, 26, 767, 22, 0x324650, 0x000000, 1, true)
+    
     isFull()
 end
 
@@ -71,3 +71,11 @@ function isFull()
   end
 end
 
+function removeTextAreas(name)
+    ui.removeTextArea(0, name)
+    ui.removeTextArea(1, name)
+    ui.removeTextArea(2, name)
+    ui.removeTextArea(4, name)
+    ui.removeTextArea(5, name)
+    ui.addTextArea(10, "<B><J>Click Spacebar To Move To Your Right. Destroy The Other Competitions, This Module Was Made By Overforyou#9290!", name, 19, 26, 767, 22, 0x324650, 0x000000, 1, true)
+end
